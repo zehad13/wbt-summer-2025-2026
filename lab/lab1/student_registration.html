@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Student Registration Form Using HTML</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>My Form</legend>
+            <br>
+            <label for="fname">1. Full Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br><br>
+            <label for="id">2. Student ID:</label>
+            <input type="text" id="id" name="id" required>
+            <br><br>
+            <label for="email">3. Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone">4. Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="dob">5. Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="Gender">6. Gender:</label>
+            <input type="radio" placeholder="Male" name="male" id="male"> Male
+            <input type="radio" placeholder="Female" name="female" id="female"> Female
+            <input type="radio" placeholder="Other" name="other" id="other"> Other
+            <br>
+        </fieldset>
+        <fieldset>
+         <legend>Academic Information</legend>
+          <label for="department">7. Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="CSE">a. CSE </option>
+                <option value="EEE">b. EEE</option>
+                <option value="BBA">c. BBA</option>
+                <option value="English">d. English</option>
+                <option value="Civil Engineering">e. Civil Engineering</option>
+            </select>
+            <br><br>
+            <label for="semester">8. Semester:</label>
+             <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1st">a. 1st semester</option>
+                <option value="2nd">b. 2nd semester</option>
+                <option value="3rd">c. 3rd semester</option>
+                <option value="4th">d. 4th semester</option>
+                <option value="5th">e. 5th semester</option>
+                <option value="6th">e. 6th semester</option>
+                <option value="7th">e. 7th semester</option>
+                <option value="8th">e. 8th semester</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="semester">9. Select Programming Languages Known:</label>
+            <input type="checkbox" id="c" name="language" value="C" required>
+            <label for="c">a. C</label>
+            <input type="checkbox" id="cpp" name="language" value="C++" required>
+            <label for="cpp">b. C++</label>
+            <input type="checkbox" id="java" name="language" value="Java" required>
+            <label for="java">c. Java</label>
+            <input type="checkbox" id="python" name="language" value="python" required>
+            <label for="python">d. Python</label>
+            <input type="checkbox" id="javascript" name="language" value="javascript" required>
+            <label for="javascript">e. javaScript</label>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <p>10. Address:</p>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here..." required></textarea>
+            <br><br>
+            <label for="photo">11. Upload Student Photo:</label><br>
+            <input type="file" id="photo" name="photo">
+            <br><br>
+            <label for="comments">12. Comments/Suggestions:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="40" maxlength="200" placeholder="Enter your comments or any suggestions..."></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+</body>
+
+</html>
